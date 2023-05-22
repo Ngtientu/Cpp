@@ -6,6 +6,7 @@ using namespace std;
 
 void example4()
 {
+
     // cau a:
     int M = 0;
     cout << "Yeu cau nguoi dung nhap vao so trang trai:";

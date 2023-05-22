@@ -5,8 +5,9 @@
 #include <fstream>
 using namespace std;
 
-int example2()
+void example2()
 {
+
     // cau a:
     int M = 0;
     cout << "Yeu cau nguoi dung nhap vao so trang trai:";

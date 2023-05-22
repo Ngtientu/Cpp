@@ -6,6 +6,7 @@ using namespace std;
 
 void example3()
 {
+    cout << "Đây là chương trình 3 \n";
     // cau a:
     int N;
     cout << "Yeu cau nguoi dung nhap vao so nguyen duong: \n";

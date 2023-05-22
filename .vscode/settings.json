@@ -1,6 +1,8 @@
 {
     "C_Cpp.intelliSenseEngineFallback": "enabled",
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "random": "cpp",
+        "algorithm": "cpp"
     }
 }
