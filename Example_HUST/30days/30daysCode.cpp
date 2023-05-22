@@ -8,7 +8,6 @@ void bai1()
     cout << "Nhap a: ";
     while (true)
     {
-
         cin >> a;
         if (lonNhat < a)
         {
@@ -311,6 +310,44 @@ void bai10()
         cout << "No !! " << endl;
     }
 }
+
+int n, a[1000], x;
+bool check = false;
+bool timX()
+{
+    int l = 1, r = n;
+    while (l <= r)
+    {
+        int mid = (l + r) / 2;
+        if (a[mid] == x)
+            return true;
+        if (a[mid] > x)
+            r = mid - 1;
+        else
+            l = mid + 1;
+    }
+    return false;
+}
+void bai11()
+{
+    /* Nhập số nguyên dương n và sau đó là n số nguyên dương được sắp xếp
+    thứ tự tăng dần. Nhập số nguyên dương x.
+    In ra Yes nếu x xuất hiện trong danh sách trên.*/
+    cout << "Nhập n :";
+    cin >> n;
+    cout << "\nNhập " << n << " số tăng dần: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+    }
+    cout << "Nhập x: ";
+    cin >> x;
+    if (timX())
+        cout << "\n-------Yess------- !!! \n";
+    else
+        cout << "-------No------- !!! \n";
+}
+
 int main()
 {
     // bai1();
@@ -323,7 +360,7 @@ int main()
     // bai7();
     // bai8();
     // bai9();
-
-    bai10();
+    // bai10();
+    bai11();
     return 1;
 }
