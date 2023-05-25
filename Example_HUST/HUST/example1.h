@@ -4,6 +4,7 @@ using namespace std;
 
 void example1()
 {
+
     int N;
 
     std::cout << "Nhập số thế hệ gà trong một trang trại: ";
